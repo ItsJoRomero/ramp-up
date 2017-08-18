@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		1E2BAD941F43CAFE00607118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BAD931F43CAFE00607118 /* AppDelegate.swift */; };
 		1E2BAD961F43CAFE00607118 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BAD951F43CAFE00607118 /* art.scnassets */; };
-		1E2BAD981F43CAFE00607118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BAD971F43CAFE00607118 /* ViewController.swift */; };
+		1E2BAD981F43CAFE00607118 /* RampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BAD971F43CAFE00607118 /* RampPlacerVC.swift */; };
 		1E2BAD9B1F43CAFE00607118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BAD991F43CAFE00607118 /* Main.storyboard */; };
 		1E2BAD9D1F43CAFE00607118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BAD9C1F43CAFE00607118 /* Assets.xcassets */; };
 		1E2BADA01F43CAFE00607118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2BAD9E1F43CAFE00607118 /* LaunchScreen.storyboard */; };
+		1EBFEEDF1F452691006260FD /* RampPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFEEDE1F452691006260FD /* RampPickerVC.swift */; };
+		1EBFEEE11F452EDF006260FD /* ramps.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFEEE01F452EDF006260FD /* ramps.scn */; };
+		1EBFEEE41F46631B006260FD /* Ramp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFEEE31F46631B006260FD /* Ramp.swift */; };
+		1EBFEEE61F466863006260FD /* main.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFEEE51F466863006260FD /* main.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E2BAD901F43CAFE00607118 /* ramp-up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ramp-up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2BAD931F43CAFE00607118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E2BAD951F43CAFE00607118 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		1E2BAD971F43CAFE00607118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E2BAD971F43CAFE00607118 /* RampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacerVC.swift; sourceTree = "<group>"; };
 		1E2BAD9A1F43CAFE00607118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E2BAD9C1F43CAFE00607118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E2BAD9F1F43CAFE00607118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E2BADA11F43CAFE00607118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EBFEEDE1F452691006260FD /* RampPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerVC.swift; sourceTree = "<group>"; };
+		1EBFEEE01F452EDF006260FD /* ramps.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ramps.scn; path = ../art.scnassets/ramps.scn; sourceTree = "<group>"; };
+		1EBFEEE31F46631B006260FD /* Ramp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramp.swift; sourceTree = "<group>"; };
+		1EBFEEE51F466863006260FD /* main.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = main.scn; path = ../art.scnassets/main.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		1E2BAD921F43CAFE00607118 /* ramp-up */ = {
 			isa = PBXGroup;
 			children = (
+				1EBFEEE21F466309006260FD /* Model */,
+				1E2BADA71F43CC3900607118 /* Controller */,
 				1E2BAD931F43CAFE00607118 /* AppDelegate.swift */,
 				1E2BAD951F43CAFE00607118 /* art.scnassets */,
-				1E2BAD971F43CAFE00607118 /* ViewController.swift */,
 				1E2BAD991F43CAFE00607118 /* Main.storyboard */,
 				1E2BAD9C1F43CAFE00607118 /* Assets.xcassets */,
 				1E2BAD9E1F43CAFE00607118 /* LaunchScreen.storyboard */,
 				1E2BADA11F43CAFE00607118 /* Info.plist */,
 			);
 			path = "ramp-up";
+			sourceTree = "<group>";
+		};
+		1E2BADA71F43CC3900607118 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EBFEEE01F452EDF006260FD /* ramps.scn */,
+				1E2BAD971F43CAFE00607118 /* RampPlacerVC.swift */,
+				1EBFEEDE1F452691006260FD /* RampPickerVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1EBFEEE21F466309006260FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EBFEEE31F46631B006260FD /* Ramp.swift */,
+				1EBFEEE51F466863006260FD /* main.scn */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +157,8 @@
 				1E2BADA01F43CAFE00607118 /* LaunchScreen.storyboard in Resources */,
 				1E2BAD9D1F43CAFE00607118 /* Assets.xcassets in Resources */,
 				1E2BAD9B1F43CAFE00607118 /* Main.storyboard in Resources */,
+				1EBFEEE11F452EDF006260FD /* ramps.scn in Resources */,
+				1EBFEEE61F466863006260FD /* main.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E2BAD981F43CAFE00607118 /* ViewController.swift in Sources */,
+				1E2BAD981F43CAFE00607118 /* RampPlacerVC.swift in Sources */,
+				1EBFEEE41F46631B006260FD /* Ramp.swift in Sources */,
+				1EBFEEDF1F452691006260FD /* RampPickerVC.swift in Sources */,
 				1E2BAD941F43CAFE00607118 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
